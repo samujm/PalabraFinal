@@ -8,6 +8,16 @@ public /*final*/ class Persona {
     //CONSTANTE EN MAYUSCULAS Y SEPARADAS POR GUION BAJO
     public final static int MI_CONSTANTE = 1;
     
+    private String nombre;
+    
+    public String getNombre(){
+        return nombre;
+    }
+    
+    public void setNombre(String nombre){
+        this.nombre = nombre;
+    }
+    
     public /*final*/ void imprimir(){ //Si el metodo en la clase padre se marca como final entonces se está indicando que las clases hijas ya no podran modificar el comportamiento de este metodo en las clases hijas
         System.out.println("Metodo imprimir");
     }

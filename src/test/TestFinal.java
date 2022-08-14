@@ -17,5 +17,13 @@ public class TestFinal {
         //Persona.MI_CONSTANTE = 2; //No se puede modificar una constante
         
         System.out.println("Mi constante = " + Persona.MI_CONSTANTE);
+        
+       /* ---------------------------------------------- OBJETOS FINAL ---------------------------------------------------*/
+        final  Persona persona1 = new Persona();
+        //persona1 = new Persona; //NO SE PUEDE VOLVER A ASIGNAR UNA NUEVA REFERENCIA A LA VARIABLE PERSONA YA QUE SE MANEJÓ COMO FINAL
+        persona1.setNombre("Juan"); //No se modifica la referencia pero el contenido si se puede
+        System.out.println("persona1 nombre: " + persona1);
+        persona1.setNombre("Carlos");
+        
     }
 }
